@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'pro_generate_toc'
-  spec.version       = '1.0.0'
+  spec.version       = '1.0.1'
   spec.summary       = 'Jekyll Table of Contents plugin'
   spec.description   = 'Jekyll (Ruby static website generator) plugin which generates a Table of Contents for the page.'
   spec.authors       = %w[Ryan]
@@ -13,4 +13,6 @@ Gem::Specification.new do |spec|
   spec.metadata['source_code_uri'] = spec.homepage
   spec.metadata['changelog_uri'] = spec.homepage
   spec.metadata['rubygems_mfa_required'] = 'true'
+
+   spec.files         = `git ls-files -z`.split("\x0")
 end
