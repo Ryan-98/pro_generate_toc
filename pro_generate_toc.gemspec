@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'pro_generate_toc'
-  spec.version       = '1.0.0'
+  spec.version       = '0.0.0'
   spec.summary       = 'Jekyll Table of Contents plugin'
   spec.description   = 'Jekyll (Ruby static website generator) plugin which generates a Table of Contents for the page.'
   spec.authors       = %w[Ryan]
@@ -13,9 +13,4 @@ Gem::Specification.new do |spec|
   spec.metadata['source_code_uri'] = spec.homepage
   spec.metadata['changelog_uri'] = spec.homepage
   spec.metadata['rubygems_mfa_required'] = 'true'
-
-  spec.required_ruby_version = '>= 2.6'
-
-  spec.add_dependency 'jekyll', '>= 3.9'
-  spec.add_dependency 'nokogiri', '~> 1.12'
 end
