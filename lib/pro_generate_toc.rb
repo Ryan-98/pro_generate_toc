@@ -2,6 +2,9 @@ require 'nokogiri'
 
 module Jekyll
     class RenderTocPro < Liquid::Tag
+        def initialize(tag_name, input, tokens)
+              super
+        end
         def render(context)
           @doc = Nokogiri::HTML::DocumentFragment.parse(context.registers[:page]['content'])
 
