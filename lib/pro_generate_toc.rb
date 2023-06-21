@@ -6,7 +6,7 @@ module Jekyll
         def generate(site)
           parser = Jekyll::Converters::Markdown.new(site.config)
 
-          site.pages.each do |page|
+          site.documents.each do |page|
             page.data["subnav"] << { "title" => 'Test Generator', "url" => 'Test Generator' }
           end
         end
