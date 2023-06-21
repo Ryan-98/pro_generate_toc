@@ -18,14 +18,14 @@ module Jekyll
             def render(context)
               @doc = Nokogiri::HTML::DocumentFragment.parse(context.registers[:page]['content'])
 
-              %(<ul id="pro-sidebar" class="js-scroll-nav list-group">\n#{Parser.new(@doc).build_toc_list}</ul>)
+              %(<ul id="pro-sidebarx" class="js-scroll-nav list-group">\n#{Parser.new(@doc).build_toc_list}</ul>)
             end
       end
       module TableOfContentsFilter
           def pro_toc(html)
               @doc = Nokogiri::HTML::DocumentFragment.parse(html)
 
-              %(<ul id="pro-sidebar" class="js-scroll-nav list-group">\n#{Parser.new(@doc).build_toc_list}</ul>)
+              %(<ul id="pro-sidebarx" class="js-scroll-nav list-group">\n#{Parser.new(@doc).build_toc_list}</ul>)
           end
       end
       class Parser
