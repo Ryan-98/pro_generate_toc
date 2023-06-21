@@ -2,6 +2,15 @@ require 'nokogiri'
 
 module Jekyll
     module Tags
+      class ProTocGenerator < Jekyll::Generator
+        def generate(site)
+          parser = Jekyll::Converters::Markdown.new(site.config)
+
+          site.pages.each do |page|
+            page.data["subnav"] << { "title" => 'Test Generator', "url" => 'Test Generator' }
+          end
+        end
+      end
       class RenderTocPro < Liquid::Tag
             def initialize(tag_name, input, tokens)
                   super
